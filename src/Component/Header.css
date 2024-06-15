@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(250, 250, 250, 0.887);
+}
+
+.nav_logo {
+    font-size: 32px;
+    color: rgb(126, 124, 124);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav_logo:hover {
+    color: #1e1e1e;
+}
+
+
+
+
+.nav_bar a {
+    position: relative;
+    font-size: 1rem;
+    color: rgb(57, 60, 60);
+    margin-left: 50px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.nav_bar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #bcb6b6;
+    transition: .3s;
+}
+
+.nav_bar a:hover::before {
+    width: 100%;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+
+
+
+
+/**
+================ Responsive styles
+*/
+
+/* Add this CSS to hide the navigation menu and show the hamburger icon on small screens */
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        position: fixed;
+        padding: 18px 18px 18px 18px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(105, 37, 37, 0);
+    }
+
+        .nav_bar {
+            display: none;
+        }
+
+
+        .hamburger-icon {
+            display: block;
+        }
+
+        .nav_bar_mobile {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            left: 0;
+            list-style: none;
+            background-color: #171515c8;
+            top: 0;
+            margin-top: 83px;
+            transition: all 0.5s ease-in-out;
+            opacity: 95%;
+            width: 100%;
+            padding: 20px;
+            z-index: 10;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .nav_bar_mobile a {
+            position: relative;
+            font-size: 1.2rem;
+            color: rgb(211, 211, 211);
+            
+            font-weight: 300;
+        }
+
+        .nav_bar_mobile a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #e8ff72ce;
+            transition: .3s;
+        }
+
+        .nav_bar_mobile a:hover::before {
+            width: 100%;
+        }
+    }

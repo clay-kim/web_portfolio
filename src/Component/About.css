@@ -1,0 +1,227 @@
+.about_container {
+    padding: 20px 80px 20px 80px;
+    background-color: rgba(255, 255, 0, 0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_box1 {
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo2 {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    background-image: url("../Assets/brain.jpg");
+    background-blend-mode:overlay; 
+    background-size: cover;
+   
+    background-position: center;
+}
+
+
+
+
+
+.about_box2 {
+    background-color: #176a0000;
+    width: 40%;
+    padding-left: 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_clay {
+    padding: 12px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+.quote_box {
+    min-width: 400px;
+    min-height: 240px;
+    background-color: #e8301400;
+    height: 100%;
+}
+
+.carousel_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content_box {
+    padding: 10px;
+    font-size: 19px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(48, 46, 44);
+    line-height: 1.8rem;
+    width: 100%;
+
+    h4{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+
+.wrapped-image {
+    padding-left: 40px;
+    max-width: 280px;
+    opacity: 0.9;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+
+
+/*
+============ Quote Text css ==========================
+*/
+
+:root {
+    --color-background: #31037D;
+    --axis-x: .5px;
+    --axis-y: 1rem;
+    --delay: 4;
+    --color-black: #161515e3;
+    --color-white: #fff;
+    --color-orange: #f6b749e0;
+    --color-red: #eb4e3ce3;
+    --color-violet: #CF52EB;
+    --color-blue: #44A3F7;
+    --color-green: #5ACB3C;
+    --color-yellow: #f5d762;
+    --font-name: Righteous;
+}
+
+.c-rainbow {
+    position: relative;
+    list-style: none;
+    background-color: #cf691500;
+}
+
+.c-rainbow__layer {
+    --text-color: var(--color-foreground);
+    counter-increment: rainbow;
+    font-size: 4.5rem;
+    color: var(--text-color);
+    text-shadow:
+        -1px -1px 0 var(--color-black),
+        1px -1px 0 var(--color-black),
+        -1px 1px 0 var(--color-black),
+        1px 1px 0 var(--color-black),
+        4px 4px 0 rgba(0, 0, 0, 0.102);
+    animation: rainbow 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) / var(--delay) * 2s);
+    position: absolute;
+}
+
+.c-rainbow__layer:nth-child(1) {
+    animation-delay: calc(1 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 1);
+    z-index: 1;
+}
+
+.c-rainbow__layer:nth-child(2) {
+    animation-delay: calc(2 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 2);
+    z-index: 2;
+}
+
+.c-rainbow__layer:nth-child(3) {
+    animation-delay: calc(3 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 3);
+    z-index: 3;
+}
+
+.c-rainbow__layer:nth-child(4) {
+    animation-delay: calc(4 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 4);
+    z-index: 4;
+}
+
+.c-rainbow__layer:nth-child(5) {
+    animation-delay: calc(5 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 5);
+    z-index: 5;
+}
+
+.c-rainbow__layer:nth-child(6) {
+    animation-delay: calc(6 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 6);
+    z-index: 6;
+}
+
+.c-rainbow__layer:nth-child(7) {
+    animation-delay: calc(7 / var(--delay) * 1s);
+    left: calc(var(--axis-x) * 7);
+    z-index: 8;
+}
+
+.c-rainbow__layer:not(:first-child) {
+    position: absolute;
+    top: 0;
+}
+
+.c-rainbow__layer--white {
+    --text-color: var(--color-yellow);
+}
+
+.c-rainbow__layer--orange {
+    --text-color: var(--color-orange);
+}
+
+.c-rainbow__layer--red {
+    --text-color: var(--color-red);
+}
+
+.c-rainbow__layer--violet {
+    --text-color: var(--color-violet);
+}
+
+.c-rainbow__layer--blue {
+    --text-color: var(--color-blue);
+}
+
+.c-rainbow__layer--green {
+    --text-color: var(--color-green);
+}
+
+.c-rainbow__layer--yellow {
+    --text-color: var(--color-white);
+}
+
+@keyframes rainbow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
