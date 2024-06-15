@@ -1,0 +1,10 @@
+
+
+@media (max-width: 768px) {
+    .arrowBar {
+        bottom: 30px;
+        right: 230px;
+        font-size: 2rem;
+        color: blue;
+    }
+}

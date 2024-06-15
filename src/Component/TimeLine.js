@@ -17,8 +17,6 @@ function TimeLine() {
             <div className="timeLine_container">
                 <h2 className='section_title'>Experience</h2>
                 <p className='section_subtitle'>My personal journey</p>
-
-                {/* Embed local GIF */}
                 <div className="gif-container">
 
                     <img src={gifFile} alt="https://giphy.com" className="gif-embed" />

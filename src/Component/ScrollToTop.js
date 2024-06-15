@@ -1,8 +1,11 @@
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import React from 'react';
 import { useState, useEffect } from 'react';
+import "./ScrollToTop.css";
 
 function ScrollToTop() {
+
+    
 
     const [scrollUPButton, setScrollUpButton] = useState(false);
 
@@ -28,7 +31,7 @@ function ScrollToTop() {
         <div class="arrow">
         
             {scrollUPButton && (
-                <MdKeyboardDoubleArrowUp style={{
+                <MdKeyboardDoubleArrowUp className="arrowBar" style={{
                     position: "fixed",
                     bottom: "50px",
                     right: "50px",
@@ -45,3 +48,4 @@ function ScrollToTop() {
 }
 
 export default ScrollToTop
+

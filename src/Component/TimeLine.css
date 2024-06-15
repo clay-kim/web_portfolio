@@ -1,5 +1,5 @@
 .timeLine_container {
-    margin-top:50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -60,7 +60,8 @@
     padding: 20px;
 }
 
-.timeLine_button, .timeLine_button_active {
+.timeLine_button,
+.timeLine_button_active {
     background-color: #454545;
     color: rgb(177, 174, 174);
     font-size: 1rem;
@@ -72,7 +73,8 @@
 
 }
 
-.timeLine_button:hover, .timeLine_button_active:hover {
+.timeLine_button:hover,
+.timeLine_button_active:hover {
     background-color: rgba(255, 255, 255, 0.803);
     color: #007bffd5;
 }
@@ -127,7 +129,7 @@
     align-items: center;
 }
 
-.calendar-icon{
+.calendar-icon {
     margin-right: 3px;
 }
 
@@ -145,4 +147,92 @@
     height: 100%;
     background-color: #686767;
     transform: translate(6px, -7px);
+}
+
+
+/* Mobile Smart Phone */
+@media screen and (max-width: 480px) {
+
+    .timeLine {
+
+        height: 100%;
+    }
+
+    .timeLine_container {
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+
+        h2 {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .gif-embed {
+        max-width: 150px;
+        margin: 0;
+    }
+
+    .timeLine_box {
+        max-width: 90%;
+        background-color: rgba(127, 255, 212, 0);
+        height: 100%;
+    }
+
+    .timeLine_tabs {
+        display: flex;
+        justify-content: space-around;
+        padding: 14px;
+    }
+
+
+    .timeLine_sections {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 0.5fr;
+        justify-content: center;
+        background-color: rgba(162, 197, 56, 0);
+    }
+
+    .timeLine_data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.2rem;
+        width: 340px;
+    }
+
+    .timeLine_title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .timeLine_subtitle {
+        display: inline-block;
+        font-size: 12px;
+        margin-bottom: 10px;
+        font-weight: 300;
+        color: #3d3737a9;
+    }
+    
+    .timeLine_calendar {
+        font-size: 12px;
+        color: #3d3737a9;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+    
+    .calendar-icon {
+        margin-right: 2px;
+    }
+    
+
 }
