@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css';
-import { LuSend } from "react-icons/lu";
+import { IoDownloadOutline } from "react-icons/io5";
 import Social from './Social';
 
 
@@ -24,7 +24,7 @@ function Home() {
                             <span class='highlight'> inspiration</span>.
                         </div>
                         <div className="button_container">
-                            <button className='sendButton'>Send Email <LuSend className='icon' /></button>
+                            <button className='sendButton'>Resume <IoDownloadOutline className='icon' /></button>
                         </div>
                     </div>
 

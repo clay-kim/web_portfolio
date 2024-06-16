@@ -18,6 +18,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
     const settings = {
+        dots: false,
         className: "center",
         centerMode: true,
         infinite: true,
@@ -35,7 +36,7 @@ const Carousel = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {

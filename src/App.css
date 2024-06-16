@@ -20,7 +20,7 @@ section {
 
 
 #home, #about, #skills, #projects, #contact, #timeLine {
-    border: 1px solid #b8ff3dcf;
+    border: 1px solid #b8ff3d00;
     height: 100vh;
     margin: 0;
     box-sizing: border-box;

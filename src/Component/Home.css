@@ -19,7 +19,8 @@ button {
     display: flex;
     padding: 15px;
     height: 50px;
-    max-width: 140px;
+    max-width: 130px;
+    text-align: left;
     border-radius: 14px;
     justify-content: space-evenly;
     align-items: center;
@@ -32,14 +33,16 @@ button {
    
 }
 .sendButton:hover{
-    color: #f9ff3c;;
+    color: #ffa601;;;
     text-decoration: none;
 
 }
 
 
 .icon {
-    margin-left: 4px;
+    color: rgb(255, 255, 255);
+    margin-left: 3px;
+    font-size: 22px;
 }
 
 
@@ -165,55 +168,49 @@ button {
 
 
 /* Add media queries for responsiveness================================================================ */
-@media screen and (max-width: 992px) {
 
-    .home_container {
-        background-color: rgb(228, 52, 196);
-    }
-
-    .home_content {
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 1022) {
 
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 768px){
     .home_container {
-        background-color: rgba(0, 0, 255, 0.537);
+        background-color: rgba(255, 0, 179, 0.701);
         display: flex;
-        padding: 0px;
-        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 45px;
     }
 
     .home_content {
         display: flex;
-        padding: 10px;
+        padding: 12px;
+        margin-top: 20px;
     }
 
     .home_text {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 8px;
+       
     }
 
     .home_info {
-        font-size: 16px;
+        font-size: 14px;
         color: rgb(48, 48, 48);
     }
 
 
     .home_img {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
         margin: 0;
         text-indent: -9999px;
     }
 
 
     .home_title {
-        font-size: 24px;
+        font-size: 40px;
         font-weight: 500;
         color: rgb(40, 39, 39);
     }
@@ -244,7 +241,7 @@ button {
     }
 
     .home_social_icon {
-        color: rgba(20, 19, 19, 0.76);
+        color: rgba(20, 19, 19, 0.724);
     }
 
 
@@ -255,10 +252,8 @@ button {
         justify-content: left;
         align-items: center;
         padding-left: 0px;
-        margin-top: 20px;
+        margin: 0;
     }
-
-
 
     .button_container {
         display: flex;
@@ -268,7 +263,7 @@ button {
     .button_container {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     button {
@@ -289,6 +284,9 @@ button {
 
 
 }
+
+
+
 
 /* Mobile Smart Phone */
 @media screen and (max-width: 480px) {
@@ -371,6 +369,7 @@ button {
         justify-content: left;
         align-items: center;
         padding-left: 0px;
+        margin: 0;
     }
 
     .button_container {
@@ -401,11 +400,5 @@ button {
     }
 
 
-
-}
-
-@media screen and (max-width: 378px) {
- 
-    
 
 }

@@ -65,7 +65,9 @@
     background-color: #454545;
     color: rgb(177, 174, 174);
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
     margin: 5px;
     border-radius: 8px;
     cursor: pointer;
@@ -185,12 +187,15 @@
         max-width: 90%;
         background-color: rgba(127, 255, 212, 0);
         height: 100%;
+
     }
 
     .timeLine_tabs {
         display: flex;
         justify-content: space-around;
-        padding: 14px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-top: 0;
     }
 
 
