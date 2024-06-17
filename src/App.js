@@ -6,6 +6,7 @@ import About from "./Component/About";
 import Skills from "./Component/Skills";
 import TimeLine from "./Component/TimeLine";
 import ScrollToTop from "./Component/ScrollToTop";
+import ContactForm from "./Component/ContactForm";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
         </section>
 
         <section id="contact">
-          contact
+          <ContactForm />
         </section>
 
     

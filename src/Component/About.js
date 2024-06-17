@@ -42,7 +42,6 @@ function About() {
 
                     </div>
                     <div className='carousel_container'>
-
                         <Carousel />
                     </div>
                 </div>

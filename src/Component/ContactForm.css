@@ -1,0 +1,315 @@
+.contactForm_container {
+    padding: 20px 80px 20px 80px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm_content {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img_container {
+    img {
+        width: 450px;
+        border-radius: 2em;
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    }
+}
+
+
+.contact_form {
+    background-color: rgba(255, 255, 0, 0);
+    width: 540px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+
+.form-group-container {
+    width: 540px;
+    max-width: 100%;
+    padding: 0 10px;
+
+    display: flex;
+
+}
+
+.form-group-container h2 {
+    font-size: 60px;
+    color: #3671d1f9;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.form-group {
+    width: 90%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.form-group-msg {
+    width: 90%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.home_social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.home_social_icon {
+    color: rgba(20, 19, 19, 0.724);
+    font-size: 1rem;
+}
+
+.home_social_icon:hover {
+    color: #ffa601;
+    /* Change color on hover */
+}
+
+
+
+
+
+input,
+textarea {
+    width: 100%;
+    font-size: 18px;
+    resize: vertical;
+    padding: 10px;
+    color: rgb(102, 104, 102);
+    outline: none;
+    border: 1px solid rgba(189, 189, 189, 0.6);
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+textarea:focus {
+    border: 1px solid rgba(177, 245, 121, 0.735);
+}
+
+textarea {
+    height: 52px;
+    resize: vertical;
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+textarea#message {
+    height: 400px;
+}
+
+.textarea_message {
+    height: 160px;
+}
+
+.button_container {
+
+    width: 90%;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+
+.submit-button {
+    background-color: rgba(241, 241, 241, 0.493);
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    min-width: 120px;
+    text-align: left;
+    border-radius: 14px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(84, 84, 84);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+
+}
+
+.submit-button:hover {
+    color: #ffa601;
+}
+
+
+
+/* Mobile Smart Phone */
+@media screen and (max-width: 480px) {
+
+    .contactForm_container {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 10px 0px 10px;
+        margin-top: 10px;
+    }
+
+    .img_container {
+
+        img {
+            width: 250px;
+            border-radius: 2em;
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+        }
+    }
+
+
+    .contactForm_content {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .home_social {
+        display: flex;
+        flex-direction: row;
+        row-gap: 1rem;
+        padding: 10px;
+    }
+
+    .home_social_icon {
+        color: rgba(20, 19, 19, 0.724);
+        font-size: 1rem;
+    }
+
+    .home_social_icon:hover {
+        color: #ffa601;
+        /* Change color on hover */
+    }
+
+
+    input,
+    textarea {
+        width: 100%;
+        font-size: 16px;
+        resize: vertical;
+        padding: 10px;
+        color: rgb(102, 104, 102);
+        outline: none;
+        border: 1px solid rgba(189, 189, 189, 0.6);
+        border-radius: 10px;
+        margin-top: 5px;
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+        background-color: #ffffff;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    
+    textarea:focus {
+        border: 1px solid rgba(177, 245, 121, 0.735);
+    }
+    
+    textarea {
+        height: 48px;
+        resize: vertical;
+        width: 300px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+
+    .form-group-container h2 {
+        font-size: 50px;
+        color: #3671d1f9;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .form-group {
+        width: 90%;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .form-group-msg {
+        width: 90%;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .button_container {
+
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    
+    .submit-button {
+        background-color: rgba(241, 241, 241, 0.493);
+        display: flex;
+        padding: 10px;
+        height: 40px;
+        min-width: 120px;
+        text-align: left;
+        border-radius: 14px;
+        justify-content: space-evenly;
+        align-items: center;
+        color: rgb(84, 84, 84);
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    
+    }
+}
+
+
+@media screen and (max-width: 1180px) {
+    .contactForm_container {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
