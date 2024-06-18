@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
 .about_container {
     padding: 20px 80px 20px 80px;
     background-color: rgba(255, 255, 0, 0);
@@ -19,21 +22,6 @@
     padding: 10px;
 
 }
-
-.logo2 {
-    width: 250px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-bottom: 20px;
-    background-image: url("../Assets/brain.jpg");
-    background-blend-mode: overlay;
-    background-size: cover;
-
-    background-position: center;
-}
-
-
-
 
 
 .about_box2 {
@@ -73,15 +61,21 @@
 
 .content_box {
     padding: 10px;
-    font-size: 19px;
+    font-size: 18px;
     font-family: "Open Sans", sans-serif;
-    color: rgb(48, 46, 44);
+    color: rgb(127, 127, 127);
     line-height: 1.8rem;
     width: 100%;
 
     h4 {
-        font-size: 28px;
-        margin-bottom: 15px;
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        line-height: 2.8rem;
+        width: 350px;
+        color: #414141;
     }
 }
 
@@ -229,9 +223,12 @@
 
 
 
-/* Add media queries for responsiveness================================================================ */
-@media screen and (max-width: 992px) {}
 
+
+
+
+
+/* Add media queries for responsiveness================================================================ */
 @media screen and (max-width: 768px) {  .about_container {
     padding: 40px 10px 0px 10px;
     background-color: rgba(255, 255, 0, 0);
@@ -403,11 +400,11 @@ display: none;
 }
 
 
+
 /* Mobile Smart Phone */
 @media screen and (max-width: 480px) {
     .about_container {
         padding: 40px 10px 0px 10px;
-        background-color: rgba(255, 255, 0, 0);
         height: 100%;
         width: 100%;
         display: flex;
@@ -430,7 +427,6 @@ display: none;
         justify-content: flex-start;
         width: 100%;
         padding-left: 0;
-        background-color: #5bcb3c00;
         height: auto;
     }
 
@@ -557,16 +553,21 @@ display: none;
     }
 
     .content_box {
-        background-color: #cf52eb00;
-        font-size: 15px;
+        font-size: 17px;
+        font-weight: 500;
         font-family: "Open Sans", sans-serif;
-        color: rgb(91, 91, 91);
+        color: rgb(127, 127, 127);
         line-height: 1.3rem;
-        width: 100%;
+        width: 360px;
 
         h4 {
-            font-size: 22px;
-            color: rgb(60, 60, 60);
+            font-size: 40px;
+            line-height: 2rem;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            width: 240px;
+            color: #414141;
         }
     }
 

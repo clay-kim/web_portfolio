@@ -1,5 +1,5 @@
 import React from 'react'
-import './skills.css'
+import './Skills.css'
 import photoshop from '../Assets/icons/photoshop.png'
 import illust from '../Assets/icons/illustrator.png'
 import figma from '../Assets/icons/figma.png'
@@ -24,12 +24,10 @@ function Skills() {
 
                 <div className="contents">
                     <h1 className="title">Skills</h1>
+                    <p>Things I mostly familiar with</p>
                 </div>
 
-
-
                 <div className="skills_box">
-
 
                     <div className="design_container">
                         <div className="skill_title">Design</div>

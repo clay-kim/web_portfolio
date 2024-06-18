@@ -7,6 +7,7 @@ import Skills from "./Component/Skills";
 import TimeLine from "./Component/TimeLine";
 import ScrollToTop from "./Component/ScrollToTop";
 import ContactForm from "./Component/ContactForm";
+import Projects from "./Component/Projects";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
         </section>
 
         <section id="projects">
-
+          <Projects />
         </section>
 
         <section id="contact">

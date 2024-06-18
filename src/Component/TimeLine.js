@@ -5,7 +5,7 @@ import { CiCalendar } from "react-icons/ci";
 
 function TimeLine() {
 
-    const [toggleState, setToggleState] = useState(1);
+    const [toggleState, setToggleState] = useState();
     const toggleTab = (index) => {
         setToggleState(index);
     }

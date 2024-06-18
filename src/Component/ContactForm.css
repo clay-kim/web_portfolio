@@ -45,7 +45,8 @@
 .form-group-container h2 {
     font-size: 60px;
     color: #3671d1f9;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -167,6 +168,16 @@ textarea#message {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Mobile Smart Phone */
 @media screen and (max-width: 480px) {
 
@@ -223,7 +234,7 @@ textarea#message {
         font-size: 16px;
         resize: vertical;
         padding: 10px;
-        color: rgb(102, 104, 102);
+        color: rgba(99, 99, 99, 0.874);
         outline: none;
         border: 1px solid rgba(189, 189, 189, 0.6);
         border-radius: 10px;
@@ -233,6 +244,7 @@ textarea#message {
         cursor: pointer;
         font-size: 18px;
         transition: 0.5s;
+        font-family: "Open Sans", sans-serif;
     }
     
     textarea:focus {
@@ -246,13 +258,20 @@ textarea#message {
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
+
     }
-    
+
+    textarea::placeholder {
+        color: rgba(113, 113, 113, 0.667);
+    }
+
 
     .form-group-container h2 {
-        font-size: 50px;
-        color: #3671d1f9;
-        font-family: "Open Sans", sans-serif;
+        font-size: 48px;
+        color: #445c83f9;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+
         text-align: center;
         margin-top: 10px;
     }
@@ -286,27 +305,36 @@ textarea#message {
         padding: 10px;
     }
     
-    
+
     .submit-button {
-        background-color: rgba(241, 241, 241, 0.493);
+        background-color: rgba(248, 248, 248, 0.868);
         display: flex;
         padding: 10px;
-        height: 40px;
-        min-width: 120px;
+        height: 38px;
+        min-width: 100px;
         text-align: left;
-        border-radius: 14px;
+        border-radius: 20px;
         justify-content: space-evenly;
         align-items: center;
-        color: rgb(84, 84, 84);
-        border: none;
-        font-size: 18px;
-        font-weight: 500;
+        color: rgb(51, 57, 62);
+        border: 2px solid #525252;
+        font-size: 15px;
+        font-weight: 100;
         cursor: pointer;
         transition: color 0.3s ease;
         box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
     
     }
 }
+
+
+.submit-button:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(57, 90, 102, 0.581);
+    border: 2px dotted #fefff6;
+}
+
 
 
 @media screen and (max-width: 1180px) {
