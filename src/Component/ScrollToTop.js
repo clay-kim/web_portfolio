@@ -34,7 +34,7 @@ function ScrollToTop() {
                 <MdKeyboardDoubleArrowUp className="arrowBar" style={{
                     position: "fixed",
                     bottom: "50px",
-                    right: "60px",
+                    right: "50px",
                     height: "50px",
                     fontSize: "2.5rem",
                     color: "rgba(29, 29, 29, 0.8)",

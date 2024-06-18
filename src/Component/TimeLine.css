@@ -1,12 +1,12 @@
 .timeLine_container {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
+
     padding: 100px 80px 0px 80px;
     align-items: center;
     justify-content: center;
-    background-color: #95949400;
+
 }
 
 .timeLine {
@@ -79,7 +79,7 @@
 .timeLine_button:hover,
 .timeLine_button_active:hover {
     background-color: rgba(42, 42, 42, 0);
-    
+
 }
 
 
@@ -158,14 +158,14 @@
 @media screen and (max-width: 480px) {
 
     .timeLine {
-
+        width: 100%;
         height: 100%;
     }
 
     .timeLine_container {
-        background-color: rgba(0, 0, 255, 0);
         display: flex;
         height: 100%;
+        width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         margin: 0;
@@ -186,18 +186,16 @@
     }
 
     .timeLine_box {
-        max-width: 90%;
-        background-color: rgba(127, 255, 212, 0);
-        height: 100%;
+     
+        margin-top: 10px;
+        padding: 0;
 
     }
 
     .timeLine_tabs {
         display: flex;
         justify-content: space-around;
-        padding: 0;
-        padding-bottom: 20px;
-        margin-top: 0;
+        padding-bottom: 10px;
     }
 
 
@@ -206,7 +204,6 @@
         display: grid;
         grid-template-columns: 0.5fr;
         justify-content: center;
-        background-color: rgba(162, 197, 56, 0);
     }
 
     .timeLine_data {
@@ -220,7 +217,7 @@
         font-size: 18px;
         font-weight: 500;
     }
-    
+
     .timeLine_subtitle {
         display: inline-block;
         font-size: 12px;
@@ -228,7 +225,7 @@
         font-weight: 300;
         color: #3d3737a9;
     }
-    
+
     .timeLine_calendar {
         font-size: 12px;
         color: #3d3737a9;
@@ -236,10 +233,59 @@
         display: flex;
         align-items: center;
     }
-    
+
     .calendar-icon {
         margin-right: 2px;
     }
-    
+
+
+
+    .timeLine_button,
+    .timeLine_button_active {
+        width: 150px;
+        height: 40px;
+        background-color: #919191;
+        color: rgb(68, 68, 68);
+        font-size: 1rem;
+        border: 1px solid #343434;
+        padding: 10px;
+        text-align: center;
+        margin: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+    }
+
+
+    .timeLine_button:hover,
+    .timeLine_button_active:hover {
+        background-color: rgba(42, 42, 42, 0);
+
+    }
+
+
+    .timeLine_button_active {
+        color: #0099ffd5;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .timeLine_sections {
+        display: grid;
+        grid-template-columns: 0.5fr;
+        justify-content: center;
+        background-color: rgba(0, 255, 255, 0);
+
+    }
+
+    .timeLine_content {
+        display: none;
+    }
+
+    .timeLine_content-active {
+        display: block;
+    }
+
+
 
 }
