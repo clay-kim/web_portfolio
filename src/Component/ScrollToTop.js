@@ -11,7 +11,7 @@ function ScrollToTop() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 900) {
+            if (window.scrollY > 700) {
                 setScrollUpButton(true);
             }
             else{
@@ -34,7 +34,7 @@ function ScrollToTop() {
                 <MdKeyboardDoubleArrowUp className="arrowBar" style={{
                     position: "fixed",
                     bottom: "50px",
-                    right: "50px",
+                    right: "60px",
                     height: "50px",
                     fontSize: "2.5rem",
                     color: "rgba(29, 29, 29, 0.8)",

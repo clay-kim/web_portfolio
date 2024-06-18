@@ -4,23 +4,13 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-
-main {
-  margin: 0;
-  padding: 0;
-
-}
-
-section {
-    padding: 0px;
-}
 
 
 #home, #about, #skills, #projects, #contact, #timeLine {
     border: 1px solid #b8ff3d00;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     box-sizing: border-box;

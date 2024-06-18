@@ -32,14 +32,14 @@ function App() {
         </section>
 
         <section id="projects">
-    
+
         </section>
 
         <section id="contact">
           <ContactForm />
         </section>
 
-    
+
       </main>
 
 

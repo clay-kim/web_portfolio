@@ -112,12 +112,11 @@
 
 
 .home_img {
-    background: url(../Assets/profile2.jpeg);
+    background: url('../Assets/profile2.jpeg');
     margin-left: 25px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    /* Optional: Make the picture circular */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

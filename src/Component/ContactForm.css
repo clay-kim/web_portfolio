@@ -201,6 +201,9 @@ textarea#message {
         flex-direction: row;
         row-gap: 1rem;
         padding: 10px;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
     }
 
     .home_social_icon {
