@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import './Header.css';
 import { IoCodeSlash } from "react-icons/io5";
 import { Link } from 'react-scroll';
-import { HiMenu } from "react-icons/hi";
-import { IoCloseSharp } from "react-icons/io5";
-
 import { Squeeze as Hamburger } from 'hamburger-react'
 
 

@@ -221,9 +221,10 @@
     }
 
     .home_info {
-        font-size: 14px;
+        font-size: 17px;
         color: rgb(48, 48, 48);
-        padding-top: 24px;
+        line-height: 1.4rem;
+        padding-top: 20px;
     }
 
 

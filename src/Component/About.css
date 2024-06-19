@@ -46,7 +46,7 @@
 
 
 .quote_box {
-    min-width: 400px;
+    width: 380px;
     min-height: 240px;
     background-color: #e8301400;
     height: 100%;
@@ -121,6 +121,7 @@
     --text-color: var(--color-foreground);
     counter-increment: rainbow;
     font-size: 4.5rem;
+    line-height: 5rem;
     color: var(--text-color);
     text-shadow:
         -1px -1px 0 var(--color-black),
@@ -229,182 +230,10 @@
 
 
 /* Add media queries for responsiveness================================================================ */
-@media screen and (max-width: 768px) {  .about_container {
-    padding: 40px 10px 0px 10px;
-    background-color: rgba(255, 255, 0, 0);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
-
-.about_container :nth-child(1) {
-    order: 2;
-}
-
-.about_container :nth-child(2) {
-    order: 1;
-}
-
-.about_box2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    padding-left: 0;
-    background-color: #5bcb3c00;
-    height: auto;
-}
-
-.about_box2 :nth-child(1){
-    order: 1;
-}
-
-.carousel_container{
-    display: flex;
-
-    max-height: 280px;
-}
-
-
-.about_clay {
-    padding-top: 60px;
-}
-
-.quote_box {
-    min-width: 250px;  
-    min-height: 160px;
-}
-
-
-.c-rainbow__layer {
-    --text-color: var(--color-foreground);
-    counter-increment: rainbow;
-    font-size: 3rem;
-    color: var(--text-color);
-    text-shadow:
-        -1px -1px 0 var(--color-black),
-        1px -1px 0 var(--color-black),
-        -1px 1px 0 var(--color-black),
-        1px 1px 0 var(--color-black),
-        4px 4px 0 rgba(0, 0, 0, 0.102);
-    animation: rainbow 3s ease-in-out infinite;
-    animation-delay: calc(var(--i) / var(--delay) * 2s);
-    position: absolute;
-}
-
-
-.c-rainbow__layer:nth-child(1) {
-    animation-delay: calc(1 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 1);
-    z-index: 1;
-}
-
-.c-rainbow__layer:nth-child(2) {
-    animation-delay: calc(2 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 2);
-    z-index: 2;
-}
-
-.c-rainbow__layer:nth-child(3) {
-    animation-delay: calc(3 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 3);
-    z-index: 3;
-}
-
-.c-rainbow__layer:nth-child(4) {
-    animation-delay: calc(4 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 4);
-    z-index: 4;
-}
-
-.c-rainbow__layer:nth-child(5) {
-    animation-delay: calc(5 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 5);
-    z-index: 5;
-}
-
-.c-rainbow__layer:nth-child(6) {
-    animation-delay: calc(6 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 6);
-    z-index: 6;
-}
-
-.c-rainbow__layer:nth-child(7) {
-    animation-delay: calc(7 / var(--delay) * 1s);
-    left: calc(var(--axis-x) * 7);
-    z-index: 8;
-}
-
-.c-rainbow__layer:not(:first-child) {
-    position: absolute;
-    top: 0;
-}
-
-.c-rainbow__layer--white {
-    --text-color: var(--color-yellow);
-}
-
-.c-rainbow__layer--orange {
-    --text-color: var(--color-orange);
-}
-
-.c-rainbow__layer--red {
-    --text-color: var(--color-red);
-}
-
-.c-rainbow__layer--violet {
-    --text-color: var(--color-violet);
-}
-
-.c-rainbow__layer--blue {
-    --text-color: var(--color-blue);
-}
-
-.c-rainbow__layer--green {
-    --text-color: var(--color-green);
-}
-
-.c-rainbow__layer--yellow {
-    --text-color: var(--color-white);
-}
-
-
-.about_box1 {
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-}
-
-.content_box {
-    background-color: #cf52eb00;
-    font-size: 15px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(91, 91, 91);
-    line-height: 1.3rem;
-    width: 100%;
-
-    h4 {
-        font-size: 22px;
-        color: rgb(60, 60, 60);
-    }
-}
-
-.logo2 {
-display: none;
-}
-}
-
-
-
-/* Mobile Smart Phone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .about_container {
         padding: 40px 10px 0px 10px;
+        background-color: rgba(255, 255, 0, 0);
         height: 100%;
         width: 100%;
         display: flex;
@@ -427,14 +256,15 @@ display: none;
         justify-content: flex-start;
         width: 100%;
         padding-left: 0;
+        background-color: #5bcb3c00;
         height: auto;
     }
 
-    .about_box2 :nth-child(1){
+    .about_box2 :nth-child(1) {
         order: 1;
     }
 
-    .carousel_container{
+    .carousel_container {
         display: flex;
 
         max-height: 280px;
@@ -446,7 +276,7 @@ display: none;
     }
 
     .quote_box {
-        min-width: 250px;  
+        min-width: 250px;
         min-height: 160px;
     }
 
@@ -553,6 +383,170 @@ display: none;
     }
 
     .content_box {
+        background-color: #cf52eb00;
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(91, 91, 91);
+        line-height: 1.3rem;
+        width: 100%;
+
+        h4 {
+            font-size: 22px;
+            color: rgb(60, 60, 60);
+        }
+    }
+
+}
+
+
+
+/* Mobile Smart Phone */
+@media screen and (max-width: 480px) {
+    .about_container {
+        padding: 40px 10px 0px 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .about_container :nth-child(1) {
+        order: 2;
+    }
+
+    .about_container :nth-child(2) {
+        order: 1;
+    }
+
+    .about_box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 0;
+        height: auto;
+    }
+
+    .about_box2 :nth-child(1) {
+        order: 1;
+    }
+
+    .carousel_container {
+        display: flex;
+
+        max-height: 280px;
+    }
+
+
+    .about_clay {
+        padding-top: 60px;
+    }
+
+    .quote_box {
+       width: 250px;
+    height: 160px;
+    }
+
+
+    .c-rainbow__layer {
+        --text-color: var(--color-foreground);
+        counter-increment: rainbow;
+        font-size: 3rem;
+        line-height: 3.7rem;
+        color: var(--text-color);
+        text-shadow:
+            -1px -1px 0 var(--color-black),
+            1px -1px 0 var(--color-black),
+            -1px 1px 0 var(--color-black),
+            1px 1px 0 var(--color-black),
+            4px 4px 0 rgba(0, 0, 0, 0.102);
+        animation: rainbow 3s ease-in-out infinite;
+        animation-delay: calc(var(--i) / var(--delay) * 2s);
+        position: absolute;
+    }
+
+
+    .c-rainbow__layer:nth-child(1) {
+        animation-delay: calc(1 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 1);
+        z-index: 1;
+    }
+
+    .c-rainbow__layer:nth-child(2) {
+        animation-delay: calc(2 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 2);
+        z-index: 2;
+    }
+
+    .c-rainbow__layer:nth-child(3) {
+        animation-delay: calc(3 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 3);
+        z-index: 3;
+    }
+
+    .c-rainbow__layer:nth-child(4) {
+        animation-delay: calc(4 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 4);
+        z-index: 4;
+    }
+
+    .c-rainbow__layer:nth-child(5) {
+        animation-delay: calc(5 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 5);
+        z-index: 5;
+    }
+
+    .c-rainbow__layer:nth-child(6) {
+        animation-delay: calc(6 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 6);
+        z-index: 6;
+    }
+
+    .c-rainbow__layer:nth-child(7) {
+        animation-delay: calc(7 / var(--delay) * 1s);
+        left: calc(var(--axis-x) * 7);
+        z-index: 8;
+    }
+
+    .c-rainbow__layer:not(:first-child) {
+        position: absolute;
+        top: 0;
+    }
+
+    .c-rainbow__layer--white {
+        --text-color: var(--color-yellow);
+    }
+    .c-rainbow__layer--orange {
+        --text-color: var(--color-orange);
+    }
+    .c-rainbow__layer--red {
+        --text-color: var(--color-red);
+    }
+    .c-rainbow__layer--violet {
+        --text-color: var(--color-violet);
+    }
+    .c-rainbow__layer--blue {
+        --text-color: var(--color-blue);
+    }
+    .c-rainbow__layer--green {
+        --text-color: var(--color-green);
+    }
+    .c-rainbow__layer--yellow {
+        --text-color: var(--color-white);
+    }
+
+
+    .about_box1 {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .content_box {
         font-size: 17px;
         font-weight: 500;
         font-family: "Open Sans", sans-serif;
@@ -571,8 +565,5 @@ display: none;
         }
     }
 
-    .logo2 {
-  display: none;
-    }
 
 }

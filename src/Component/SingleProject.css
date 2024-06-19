@@ -1,0 +1,326 @@
+.card_container {
+    width: 220px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+}
+
+.card_container img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+    
+}
+
+
+.card_container h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card_container .skillsBox,
+.card_container .buttonBox {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+}
+
+.card_container .skillsBox {
+    inset: auto auto 80px 30px;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+}
+
+.card_container .buttonBox {
+    font-size: 16px;
+    inset: auto auto 20px 30px;
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.card_container:hover h2 {
+    inset: auto auto 160px 30px;
+    transition: inset .3s ease-out;
+}
+
+.card_container:hover .skillsBox,
+.card_container:hover .buttonBox {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+}
+
+.card_container:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+}
+
+
+
+
+
+
+/* Button CSS */
+.button-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #6E6D70;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #DFDEDF;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-12:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+
+
+
+/* Modal CSS */
+.modal_title{
+    font-family: "Montserrat", sans-serif;
+}
+
+.gallery-show-grid {
+    background-color: rgba(231, 231, 231, 0.794);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+}
+.modal-open {
+    background-color: rgba(41, 40, 40, 0.362);
+}
+.gallery-show-grid img {
+    width: 200px;
+
+}
+.gallery-show-grid h2 {
+    font-size: 28px;
+    color: rgba(14, 13, 13, 0.849);
+    text-align: left;
+    letter-spacing: 1px;
+}
+.gallery-show-grid h4 {
+    font-size: 18px;
+    text-align: left;
+    background-color: rgba(255, 255, 0, 0.415);
+  
+}
+
+
+.gallery-show-grid p {
+    text-align: center;
+    margin-left: 12px;
+    font-size: 16px;
+    color:rgb(125, 125, 125)
+}
+
+
+.link_options{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    align-items: first baseline;
+    background-color: rgba(0, 255, 145, 0.723);
+}
+
+.button_modal {
+    background-color: rgba(248, 248, 248, 0.868);
+    display: flex;
+    padding: 10px;
+    height: 34px;
+    min-width: 90px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(51, 57, 62);
+    border: 2px solid #525252;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.28);
+
+    p{
+        margin: 0;
+        padding-right: 3px;
+        font-size: 12px;
+    }
+
+    .iconPopUp{
+        font-size: 12px;
+    }
+}
+
+.button_modal:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(57, 90, 102, 0.581);
+    border: 2px dotted #fefff6;
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Smart Phone */
+@media screen and (max-width: 480px) {
+    .projects_container {
+        padding: 40px 10px 0px 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+.box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+    .card_container {
+        width: 150px;
+        height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        color: #fff;
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    }
+    
+    .card_container img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+        transition: opacity .2s ease-out;
+        
+    }
+    
+    
+    .card_container h2 {
+        position: absolute;
+        inset: auto auto 30px 30px;
+        margin: 0;
+        transition: inset .3s .3s ease-out;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    
+    .card_container .skillsBox,
+    .card_container .buttonBox {
+        position: absolute;
+        opacity: 0;
+        max-width: 80%;
+        transition: opacity .3s ease-out;
+        font-size: 12px;
+    }
+    
+    .card_container .skillsBox {
+        inset: auto auto 30px 10px;
+        color: rgb(255, 255, 255);
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .card_container .buttonBox {
+        inset: auto auto 0px 30px;
+        color: inherit;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+    }
+    
+    .card_container:hover h2 {
+        inset: auto auto 130px 30px;
+        transition: inset .3s ease-out;
+    }
+    
+    .card_container:hover .skillsBox,
+    .card_container:hover .buttonBox {
+        opacity: 1;
+        transition: opacity .5s .1s ease-in;
+    }
+    
+    .card_container:hover img {
+        transition: opacity .3s ease-in;
+        opacity: 1;
+    }
+
+
+    .button_modal{
+        background-color: rgba(248, 248, 248, 0.868);
+        display: flex;
+        padding: 10px;
+        height: 34px;
+        min-width: 90px;
+        border-radius: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        color: rgb(51, 57, 62);
+        border: 2px solid #525252;
+        font-size: 16px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.28);
+    
+        p{
+            margin: 0;
+            padding-right: 3px;
+            font-size: 12px;
+        }
+    
+        .iconPopUp{
+            font-size: 12px;
+        }
+    }
+    
+    .button_modal:hover {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgba(57, 90, 102, 0.581);
+        border: 2px dotted #fefff6;
+    }
+    
+
+
+}
+
+
+
