@@ -187,10 +187,13 @@
             margin: 0;
             font-family: "Montserrat", sans-serif;
             font-weight: 300;
+            color: rgb(72, 72, 72);
         }
 
         p {
             font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            color: rgba(57, 57, 57, 0.721);
         }
     }
 

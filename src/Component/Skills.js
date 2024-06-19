@@ -24,7 +24,7 @@ function Skills() {
         <section className='skills section' id='skills'>
             <div className="skills_container">
 
-                <div className="contents">
+                <div className="skills_contents">
                     <h1 className="title">Skills</h1>
                     <p>Things I mostly familiar with</p>
                 </div>

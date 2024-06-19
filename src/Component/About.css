@@ -547,6 +547,7 @@
     }
 
     .content_box {
+        padding-top: 28px;
         font-size: 17px;
         font-weight: 500;
         font-family: "Open Sans", sans-serif;
@@ -555,7 +556,7 @@
         width: 360px;
 
         h4 {
-            font-size: 40px;
+            font-size: 38px;
             line-height: 2rem;
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
