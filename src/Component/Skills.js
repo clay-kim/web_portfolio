@@ -34,7 +34,7 @@ function Skills() {
                         <div className="item_container">
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={photoshop} className='iconImg' />
+                                    <img src={photoshop} alt='icons' className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>Photoshop</p>
@@ -43,7 +43,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={illust} className='iconImg' />
+                                    <img src={illust} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>illustrator</p>
@@ -52,7 +52,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={figma} className='iconImg' />
+                                    <img src={figma} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>Figma</p>
@@ -61,7 +61,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={paint} className='iconImg' />
+                                    <img src={paint} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>Fine Art</p>
@@ -69,13 +69,13 @@ function Skills() {
                             </div>
 
                             <div className="items">
-                            <div className="icon-wrapper">
-                                <img src={agile} className='iconImg' />
+                                <div className="icon-wrapper">
+                                    <img src={agile} alt='icons'className='iconImg' />
+                                </div>
+                                <div className="project-name">
+                                    <p>Agile</p>
+                                </div>
                             </div>
-                            <div className="project-name">
-                                <p>Agile</p>
-                            </div>
-                        </div>
 
 
 
@@ -89,7 +89,7 @@ function Skills() {
                         <div className="item_container">
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={html} className='iconImg' />
+                                    <img src={html} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>HTML</p>
@@ -98,7 +98,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={js} className='iconImg' />
+                                    <img src={js} alt='icons' className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>JavaScript</p>
@@ -107,7 +107,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={css} className='iconImg' />
+                                    <img src={css} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>CSS</p>
@@ -116,7 +116,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={java} className='iconImg' />
+                                    <img src={java} alt='icons' className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>Java</p>
@@ -125,7 +125,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={cSharp} className='iconImg' />
+                                    <img src={cSharp} alt='icons' className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>C#</p>
@@ -135,7 +135,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={react} className='iconImg' />
+                                    <img src={react} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>React JS</p>
@@ -144,7 +144,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={sql} className='iconImg' />
+                                    <img src={sql} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>MySql</p>
@@ -154,7 +154,7 @@ function Skills() {
 
                             <div className="items">
                                 <div className="icon-wrapper">
-                                    <img src={json} className='iconImg' />
+                                    <img src={json} alt='icons'className='iconImg' />
                                 </div>
                                 <div className="project-name">
                                     <p>jQuery</p>
@@ -162,15 +162,13 @@ function Skills() {
                             </div>
 
                             <div className="items">
-                            <div className="icon-wrapper">
-                                <img src={aws} className='iconImg' />
+                                <div className="icon-wrapper">
+                                    <img src={aws} alt='icons'className='iconImg' />
+                                </div>
+                                <div className="project-name">
+                                    <p>Cloud</p>
+                                </div>
                             </div>
-                            <div className="project-name">
-                                <p>Cloud</p>
-                            </div>
-                        </div>
-
-
                         </div>
                     </div>
 
