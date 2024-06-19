@@ -17,6 +17,8 @@ import aws from '../Assets/icons/aws.png'
 
 
 function Skills() {
+
+
     return (
 
         <section className='skills section' id='skills'>
@@ -174,8 +176,7 @@ function Skills() {
 
                 </div>
             </div>
-
-        </section >
+        </section>
     )
 }
 
