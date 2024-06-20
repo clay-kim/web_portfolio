@@ -38,6 +38,7 @@ function ScrollToTop() {
                     height: "50px",
                     fontSize: "2.5rem",
                     color: "rgba(29, 29, 29, 0.8)",
+                    zIndex: "999",
                     }}
                     onClick={scrollUp}
                 >

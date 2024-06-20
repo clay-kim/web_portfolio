@@ -109,22 +109,20 @@
 .highlight {
     font-size: 20px;
     font-weight: 500;
-    color: #365348de;
+    color: #363a53de;
     animation: colorChange 2s ease-in-out infinite alternate;
     transition: color 0.5s ease;
 }
 
 @keyframes colorChange {
     from {
-        color: #345351f6;
+        color: #475251f6;
      
         /* Dark blue */
     }
 
     to {
-        color: #6b9aa9;
-  
-        /* Light blue */
+        color: #7aafc0;
     }
 }
 

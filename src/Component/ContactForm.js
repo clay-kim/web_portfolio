@@ -4,8 +4,6 @@ import { useRef } from 'react';
 import pic from '../Assets/brain.jpg';
 import emailjs from '@emailjs/browser';
 import Social from './Social';
-import Canvas from '../Canvas/Canvas';
-
 
 
 function ContactForm() {

@@ -1,4 +1,3 @@
-import Canvas from "./Canvas/Canvas";
 import './App.css';
 import Header from "./Component/Header";
 import Home from "./Component/Home";

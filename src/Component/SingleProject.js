@@ -11,13 +11,18 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-function SingleProject() {
+import { IoIosCheckmarkCircle } from "react-icons/io";
+
+
+function SingleProject({ title, description, image, demoLink, githubLink, skills }) {
     //Modal window for detail view
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const [popUp, setPopUp] = useState([]);
 
+    // Ensure description.tools is an array before mapping
+    const toolList = description && description.tools ? description.tools : [];
+    const featureList = description && description.features ? description.features : [];
 
     return (
         <div className='card_container'>
@@ -26,7 +31,7 @@ function SingleProject() {
                 <Modal
                     show={show}
                     onHide={() => setShow(false)}
-                    size="lg"
+                    size="xl"
                     aria-labelledby="example-custom-modal-styling-title"
                     centered={true}
 
@@ -40,17 +45,46 @@ function SingleProject() {
                     <ModalBody className="gallery-show-grid">
                         <Container className='gallery-show-grid-container'>
                             <Row>
-                                <Col xs={10} lg={5}>
-                                    <img src={pic} alt="img" />
-                                </Col>
-                                <Col className= "right_colum"xs={10} lg={6}>
-                                    <h2>Title</h2>
-                                    <h4>sdfsdfsdfasdfasdf <br></br>
-                                    ksdjflakjdflaskjdflsklslk<br></br>
-                                    ksdjflakjdflaskjdflsklssdfsdfasdfsefse dfwefsd sdcf lk<br></br>
-                                    ksdjflakjdflaskjdflsklslk</h4>
+                                <Col xs={10} lg={5} className='leftBox'>
+                                    <div className="img-container">
+                                        <img src={image} alt="img" />
+                                    </div>
                                     <div className='link_options'>
-                                        <p>Demo</p> <p>Github</p>
+                                        {demoLink && <p><a href={demoLink} target="_blank" rel=" ">Demo</a></p>}
+                                        {githubLink && <p><a href={githubLink} target="_blank" rel=" ">Github</a></p>}
+                                    </div>
+
+                                </Col>
+                                <Col className="right_colum" xs={10} lg={6}>
+                                    <div className="modal_top_content">
+                                        <h2>{title}</h2>
+                                        <h3>{description.brief}</h3>
+                                    </div>
+
+                                    <div className="modal_bottom_content">
+                                        <div className="modal_features">
+                                            <h3>Key Features</h3>
+                                            <ul>
+                                                {featureList.map((tool, index) => (
+                                                    <p key={index}>
+                                                        <IoIosCheckmarkCircle className="icon" /> {tool}
+                                                    </p>
+                                                ))}
+                                            </ul>
+                                        </div>
+
+                                        <div className="modal_tools">
+                                            <h3>Technologies Used</h3>
+                                            <ul className='list'>
+                                                {toolList.map((tool, index) => (
+                                                    <p className='i' key={index}>
+                                                        <IoIosCheckmarkCircle className="icon" /> {tool}
+                                                    </p>
+                                                ))}
+                                            </ul>
+
+                                        </div>
+
                                     </div>
 
                                 </Col>
@@ -63,12 +97,11 @@ function SingleProject() {
             </div>
 
 
-            <img src={pic} className='projectPic' />
+            <img src={image} className='projectPic' />
             <div className='cardBody'>
-                <h2>Project Name</h2>
+                <h2>{title}</h2>
                 <div className='skillsBox'>
-                    <p>descriptions...</p>
-                    <p>Skills:</p>
+                    <p>#{skills.join(' #')}</p>
                 </div>
 
                 <div className='buttonBox'>
