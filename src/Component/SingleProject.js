@@ -44,7 +44,7 @@ function SingleProject({ title, description, image, demoLink, githubLink, skills
 
                     <ModalBody className="gallery-show-grid">
                         <Container className='gallery-show-grid-container'>
-                            <Row>
+                            <Row className='row'>
                                 <Col xs={10} lg={5} className='leftBox'>
                                     <div className="img-container">
                                         <img src={image} alt="img" />
