@@ -18,14 +18,14 @@ body {
 
 #projects {
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     margin: 0;
 }
 
 
 
 #home, #about, #skills, #contact, #timeLine {
-    border: 1px solid #f66b4400;
+
     width: 100vw;
     height: 100vh;
     margin: 0;

@@ -55,7 +55,7 @@ function SingleProject({ title, description, image, demoLink, githubLink, skills
                                     </div>
 
                                 </Col>
-                                <Col className="right_colum" xs={10} lg={6}>
+                                <Col className="right_column" xs={10} lg={6}>
                                     <div className="modal_top_content">
                                         <h2>{title}</h2>
                                         <h3>{description.brief}</h3>

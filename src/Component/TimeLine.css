@@ -16,16 +16,17 @@
     align-items: center;
 
     h2 {
-        font-size: 38px;
+        font-size: 36px;
         color: rgba(21, 20, 20, 0.886);
         margin-bottom: 10px;
         font-family: "Montserrat", sans-serif;
-        font-weight: 300;
+        font-weight: 200;
     }
 
     h3 {
-        font-size: 16px;
-        color: #3d3737;
+        padding-top: 0px;
+        font-size: 14px;
+        color: rgba(57, 57, 57, 0.721);
         text-decoration: none;
 
     }

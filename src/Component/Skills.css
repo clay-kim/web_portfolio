@@ -2,7 +2,7 @@
 
 
 .skills_container {
-    padding: 20px 80px 20px 80px;
+    padding: 80px 80px 20px 80px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -13,7 +13,7 @@
 }
 
 
-.contents {
+.skills_contents {
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -22,11 +22,13 @@
     h1 {
         color: rgb(72, 72, 72);
         height: auto;
+        font-size: 36px;
+        font-weight: 200;
     }
 
     p {
-        padding-top: 18px;
-        font-size: 18px;
+        padding-top: 0px;
+        font-size: 14px;
         color: rgba(57, 57, 57, 0.721);
     }
 }
