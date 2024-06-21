@@ -16,15 +16,7 @@ body {
 
 
 
-#projects {
-    width: 100vw;
-    height: 70vh;
-    margin: 0;
-}
-
-
-
-#home, #about, #skills, #contact, #timeLine {
+#home, #about, #skills,#projects, #contact, #timeLine {
 
     width: 100vw;
     height: 100vh;

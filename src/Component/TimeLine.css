@@ -61,7 +61,7 @@
 .timeLine_tabs {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px;;
 }
 
 .timeLine_button,
@@ -74,7 +74,7 @@
     width: 120px;
     text-align: center;
     margin: 5px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -206,8 +206,8 @@
     .timeLine_tabs {
         display: flex;
         justify-content: space-around;
-        padding-bottom: 10px;
-
+        padding: 0;
+        margin-bottom: 30px;
     }
 
 
@@ -250,29 +250,18 @@
         margin-right: 2px;
     }
 
-
-
     .timeLine_button,
     .timeLine_button_active {
-        width: 150px;
-        height: 40px;
-        background-color: #919191;
+        width: 130px;
+        padding: 10px 0 10px 0;
+        background-color: #919191a9;
         color: rgb(68, 68, 68);
         font-size: 1rem;
         border: 1px solid #343434;
-        padding: 10px;
         text-align: center;
-        margin: 5px;
-        border-radius: 8px;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease, color 0.3s ease;
-
-    }
-
-
-    .timeLine_button:hover,
-    .timeLine_button_active:hover {
-        background-color: rgba(42, 42, 42, 0);
 
     }
 
