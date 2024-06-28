@@ -45,7 +45,7 @@ function TimeLine() {
 
                             <div className='timeLine_data'>
                                 <div>
-                                    <h3 className='timeLine_title'>BS, Computing & Software Development</h3>
+                                    <h3 className='timeLine_title'>BS, Information Technology</h3>
                                     <span className='timeLine_subtitle'>Lake Washington IT</span>
                                     <div className='timeLine_calendar' >
                                         <CiCalendar i className='calendar-icon' /> Kirkland, 2024
@@ -98,7 +98,7 @@ function TimeLine() {
                                     <span className='timeLine_line'></span>
                                 </div>
                                 <div>
-                                    <h3 className='timeLine_title'>BFA, Fine Art/Art Study</h3>
+                                    <h3 className='timeLine_title'>BFA, Art/Art Study</h3>
                                     <span className='timeLine_subtitle'>University of Washington</span>
                                     <div className='timeLine_calendar' >
                                         <CiCalendar i className='calendar-icon' /> Seattle, 2013

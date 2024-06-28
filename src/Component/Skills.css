@@ -130,7 +130,7 @@ button .span-mother2 span:nth-child(6) {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 28px;
+        padding-top: 16px;
     }
 
     .program_container {
