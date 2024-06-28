@@ -1,83 +1,90 @@
-.timeLine_container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    padding: 100px 80px 0px 80px;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .timeLine {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: 100%;
 
     h2 {
         font-size: 36px;
         color: rgba(21, 20, 20, 0.886);
-        margin-bottom: 10px;
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     h3 {
-        padding-top: 0px;
         font-size: 14px;
-        color: rgba(57, 57, 57, 0.721);
+        color: #343434;
         text-decoration: none;
-
     }
 
     p {
         font-size: 18px;
-        color: rgba(57, 57, 57, 0.721);
-        font-weight: 100;
-        margin-top: 5px;
+        color: rgba(91, 91, 91, 0.925);
+        font-weight: 300;
+   
     }
 }
 
-.timeLine_icon{
+.skill_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.timeLine_container {
+    padding: 90px 80px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.timeLine_icon {
     font-style: normal;
-}
-
-.gif-container {
-    text-align: center;
-}
-
-.gif-embed {
-    max-width: 200px;
-    height: auto;
-    display: block;
-
 }
 
 .timeLine_box {
     max-width: 768px;
+    padding-top: 40px;
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
 }
+
 
 .timeLine_tabs {
     display: flex;
     justify-content: space-around;
-    padding: 20px;;
+    padding: 10px;
+
 }
 
 .timeLine_button,
 .timeLine_button_active {
-    background-color: #919191;
+    background-color: #7070709d;
     color: rgb(68, 68, 68);
     font-size: 1rem;
-    border: 1px solid #343434;
-    padding: 10px;
+    border: 1px solid #2d2d2d;
+    padding: 6px;
     width: 120px;
+    height: 40px;
     text-align: center;
     margin: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.28);
 }
 
 .timeLine_button:hover,
@@ -113,26 +120,27 @@
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
     width: 400px;
 }
 
 .timeLine_title {
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .timeLine_subtitle {
     display: inline-block;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 500;
     color: #3d3737a9;
 }
 
 .timeLine_calendar {
     font-size: 14px;
     color: #3d3737a9;
-    font-weight: 500;
+    font-weight: 300;
     display: flex;
     align-items: center;
 }
@@ -166,6 +174,9 @@
 
 
 
+
+
+/*============================================================================/
 /* Mobile Smart Phone */
 @media screen and (max-width: 480px) {
 
@@ -180,68 +191,72 @@
         width: 100%;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 0;
-        padding-top: 80px;
 
         h2 {
-            font-size: 30px;
-            margin: 0;
+            font-size: 36px;
+            color: rgba(21, 20, 20, 0.886);
             font-family: "Montserrat", sans-serif;
-            font-weight: 300;
-            color: rgb(72, 72, 72);
+            font-weight: 200;
+            text-align: center;
         }
 
         p {
-            font-size: 14px;
+            font-size: 16px;
             font-family: "Open Sans", sans-serif;
-            color: rgba(57, 57, 57, 0.721);
+            color: rgba(91, 91, 91, 0.925);
         }
     }
 
-    .gif-embed {
-        max-width: 150px;
-        margin: 0;
+    .skill_container {
+        display: flex;
+        flex-direction: column;
+        min-width: 320px;
+        padding: 0;
     }
+
+
+
+    .timeLine_box {
+        max-width: 768px;
+        padding-top: 30px;
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+
 
     .timeLine_tabs {
         display: flex;
         justify-content: space-around;
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 14px;
     }
 
-
-    .timeLine_sections {
-        margin-top: 10px;
-        display: grid;
-        grid-template-columns: 0.5fr;
-        justify-content: center;
-    }
 
     .timeLine_data {
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
-        column-gap: 1.2rem;
+        column-gap: 1.7rem;
         width: 340px;
+        padding-left: 14px;
     }
 
-    .timeLine_title {
-        font-size: 18px;
-        font-weight: 500;
-    }
 
     .timeLine_subtitle {
         display: inline-block;
         font-size: 12px;
-        margin-bottom: 3px;
-        font-weight: 300;
+        font-weight: 500;
         color: #3d3737a9;
     }
 
     .timeLine_calendar {
         font-size: 12px;
         color: #3d3737a9;
-        font-weight: 500;
+        font-weight: 300;
         display: flex;
         align-items: center;
     }
@@ -252,40 +267,36 @@
 
     .timeLine_button,
     .timeLine_button_active {
-        width: 130px;
-        padding: 10px 0 10px 0;
-        background-color: #919191a9;
+        width: 100px;
+        height: auto;
+        padding: 6px 0 6px 0;
+        background-color: #7070709d;
         color: rgb(68, 68, 68);
-        font-size: 1rem;
+        font-size: 14px;
+        font-weight: 500;
         border: 1px solid #343434;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 12px;
         cursor: pointer;
         transition: background-color 0.3s ease, color 0.3s ease;
-
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.28);
     }
-
 
     .timeLine_button_active {
         color: #0099ffd5;
         background-color: rgb(255, 255, 255);
     }
-
     .timeLine_sections {
         display: grid;
         grid-template-columns: 0.5fr;
         justify-content: center;
 
     }
-
     .timeLine_content {
         display: none;
     }
-
     .timeLine_content-active {
         display: block;
     }
-
-
 
 }

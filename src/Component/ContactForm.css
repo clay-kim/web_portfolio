@@ -8,20 +8,28 @@
 }
 
 .contactForm_content {
-    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100%;
+
 }
 
 .img_container {
-    img {
-        width: 400px;
-        border-radius: 2em;
-        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 460px;
+
+}
+
+img {
+    max-width: 400px;
+    max-height: 280px;
+    border-radius: 18px;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
 }
 
 
@@ -43,10 +51,10 @@
 }
 
 .form-group-container h2 {
-    font-size: 60px;
-    color: #3671d1f9;
+    font-size: 50px;
+    color: #5c5c5cf9;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
 }
 
@@ -188,13 +196,14 @@ textarea#message {
         flex-direction: column;
         justify-content: center;
         padding: 50px 10px 0px 10px;
-        margin-top: 10px;
     }
 
     .img_container {
-
+        height: auto;
+        align-items: flex-start;
+        padding-bottom: 30px;
         img {
-            width: 250px;
+            width: 320px;
             border-radius: 2em;
             box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
         }
@@ -246,11 +255,11 @@ textarea#message {
         transition: 0.5s;
         font-family: "Open Sans", sans-serif;
     }
-    
+
     textarea:focus {
         border: 1px solid rgba(177, 245, 121, 0.735);
     }
-    
+
     textarea {
         height: 48px;
         resize: vertical;
@@ -268,7 +277,7 @@ textarea#message {
 
     .form-group-container h2 {
         font-size: 48px;
-        color: #445c83f9;
+        color: #333538b7;
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
 
@@ -304,7 +313,7 @@ textarea#message {
         justify-content: center;
         padding: 10px;
     }
-    
+
 
     .submit-button {
         background-color: rgba(248, 248, 248, 0.868);
@@ -323,7 +332,7 @@ textarea#message {
         cursor: pointer;
         transition: color 0.3s ease;
         box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
-    
+
     }
 }
 
@@ -336,11 +345,3 @@ textarea#message {
 }
 
 
-
-@media screen and (max-width: 1180px) {
-    .contactForm_container {
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
-}

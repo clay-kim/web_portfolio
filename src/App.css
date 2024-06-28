@@ -4,20 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-html, 
+html,
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 
-#home, #about, #skills,#projects, #contact, #timeLine {
-
+#home,
+#about,
+#projects,
+#contact,
+#timeLine {
+    background: linear-gradient(207deg, rgba(252, 252, 239, 0.8), rgba(193, 126, 126, 0) 70.71%),
+    linear-gradient(200deg, rgba(228, 245, 228, 0.8), rgba(3, 41, 3, 0) 70.71%),
+    linear-gradient(300deg, rgba(225, 233, 246, 0.8), rgba(15, 15, 203, 0) 70.71%);
     width: 100vw;
     height: 100vh;
     margin: 0;

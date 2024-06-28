@@ -2,153 +2,118 @@
 
 
 .skills_container {
-    padding: 80px 80px 20px 80px;
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    padding-top: 50px;
     align-items: center;
-    margin-top: 70px;
-}
-
-
-.skills_contents {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: center;
-
-    h1 {
-        color: rgb(72, 72, 72);
-        height: auto;
-        font-size: 36px;
-        font-weight: 200;
-    }
-
-    p {
-        padding-top: 0px;
-        font-size: 14px;
-        color: rgba(57, 57, 57, 0.721);
-    }
-}
-
-.skills_box {
-    background-color: rgba(60, 255, 0, 0);
-    width: 900px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding-top: 40px;
-}
-
-
-.skill_title {
-    font-size: 24px;
-    font-weight: 300;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    padding: 12px;
-
-}
-
-.title {
-    width: 100%;
-    height: 90px;
-    text-align: center;
-    font-size: 38px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-
 }
 
 .program_container {
-    padding: 20px;
-    width: 40%;
-    height: 90%;
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 0px 30px 18px 30px;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
-}
-
-.design_container {
-    padding: 20px;
-    width: 40%;
-    height: 90%;
-
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
 }
 
 .item_container {
-
     display: flex;
+    justify-content: flex-start;
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 24px;
 }
 
-.items {
-    padding: 10px;
+.skillList {
+    font-weight: 100;
+    color: white;
+    font-size: 14px;
+    border-radius: 2rem;
     width: 90px;
-    height: 80px;
-    border-radius: 8px;
+    height: 28px;
+    border: none;
+    background-color: #0a2f3dd9;
     display: flex;
-    flex-direction: column;
-    border: 2px dotted rgba(106, 106, 106, 0.575);
-    justify-content: flex-start;
-    align-items: center;
-    transition: all 0.6s;
-}
-
-
-.icon-wrapper,
-.project-name {
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-}
-
-.icon-wrapper img {
-
-    width: 40px;
-    transform: translateY(0px);
-    transition: all 0.6s;
-}
-
-.icon-wrapper {
-    align-self: center;
-}
-
-.project-name {
-    align-self: center;
-}
-
-.project-name p {
-    font-size: 16px;
-    margin-top: 5px;
+    align-items: center;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    color: rgb(41, 41, 41);
-    transform: translateY(0px);
-    transition: all 0.5s;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.28);
 }
 
-.items:hover {
-    border: 2px solid #afafaf96;
-
-    & .project-name p {
-        transform: translateY(-3px);
-    }
-
-    & .icon-wrapper img {
-        transform: translateY(2px);
-    }
+button .span-mother {
+    display: flex;
+    overflow: hidden;
 }
 
+button:hover .span-mother {
+    position: absolute;
+}
+
+button:hover .span-mother span {
+    transform: translateY(1.2em);
+}
+
+button .span-mother span:nth-child(1) {
+    transition: 0.2s;
+}
+
+button .span-mother span:nth-child(2) {
+    transition: 0.3s;
+}
+
+button .span-mother span:nth-child(3) {
+    transition: 0.4s;
+}
+
+button .span-mother span:nth-child(4) {
+    transition: 0.5s;
+}
+
+button .span-mother span:nth-child(5) {
+    transition: 0.6s;
+}
+
+button .span-mother span:nth-child(6) {
+    transition: 0.7s;
+}
+
+button .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+}
+
+button .span-mother2 span {
+    transform: translateY(-1.5em);
+}
+
+button:hover .span-mother2 span {
+    transform: translateY(0);
+}
+
+button .span-mother2 span {
+    transition: 0.2s;
+}
+
+button .span-mother2 span:nth-child(2) {
+    transition: 0.3s;
+}
+
+button .span-mother2 span:nth-child(3) {
+    transition: 0.4s;
+}
+
+button .span-mother2 span:nth-child(4) {
+    transition: 0.5s;
+}
+
+button .span-mother2 span:nth-child(5) {
+    transition: 0.6s;
+}
+
+button .span-mother2 span:nth-child(6) {
+    transition: 0.7s;
+}
 
 
 
@@ -161,100 +126,42 @@
 @media screen and (max-width: 480px) {
 
     .skills_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 50px 10px 0px 10px;
-        margin-top: 36px;
-    }
-
-
-    .skills_contents {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        color: rgb(72, 72, 72);
-
-        p {
-            font-size: 14px;
-            color: rgba(57, 57, 57, 0.721);
-            font-family: "Open Sans", sans-serif;
-        }
-
-
-    }
-
-    .skills_box {
         width: 100%;
-        height: 100%;
         display: flex;
-        justify-content: flex-start;
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding-top: 0px;
-       
-    }
-
-
-    .skill_title {
-        font-size: 18px;
-        font-weight: 300;
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        padding: 12px;
-        color: rgb(72, 72, 72);
-
-    }
-
-    .title {
-        height: auto;
-        text-align: center;
-        font-size: 30px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        color:rgb(72, 72, 72);
-
+        justify-content: flex-start;
+        padding-top: 28px;
     }
 
     .program_container {
-        padding-bottom: 20px;
-        padding: 10px;
-        width: 85%;
+        padding: 0px;
+        width: 100%;
         height: auto;
-        background-color: rgb(255, 255, 255);
         border-radius: 10px;
-        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
-    }
-
-    .design_container {
-        padding: 10px;
-        padding-bottom: 20px;
-        width: 85%;
-        border-radius: 10px;
-        height: auto;
-        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
     }
 
     .item_container {
-        gap: 14px;
+        gap: 5px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .items {
-        width: 80px;
-        height: 70px;
-        border-radius: 8px;
+    
+    .skillList {
+        font-weight: 100;
+        color: white;
+        font-size: 12px;
+        border-radius: 2rem;
+        width: 70px;
+        height: 24px;
+        border: none;
+        background-color: #0a2f3dd9;
         display: flex;
-        flex-direction: column;
-        border: 2px dotted rgba(106, 106, 106, 0.575);
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        transition: all 0.6s;
+        font-family: "Roboto", sans-serif;
+        box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.28);
     }
-
 
     .icon-wrapper,
     .project-name {
@@ -273,20 +180,6 @@
 
     .icon-wrapper {
         align-self: center;
-    }
-
-    .project-name {
-        align-self: center;
-    }
-
-    .project-name p {
-        font-size: 14px;
-        margin-top: 5px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        color: rgb(96, 94, 94);
-        transform: translateY(0px);
-        transition: all 0.5s;
     }
 
     .items:hover {

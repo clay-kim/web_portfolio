@@ -71,10 +71,10 @@
 
 
 .home_title {
-    font-size: 80px;
+    font-size: 90px;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     color: rgb(48, 48, 48);
 }
 
@@ -186,12 +186,7 @@
 
 
 /* Add media queries for responsiveness================================================================ */
-
-@media screen and (max-width: 1022) {}
-
 @media screen and (max-width: 768px) {}
-
-
 
 
 /* Mobile Smart Phone */
@@ -236,8 +231,9 @@
 
     .home_title {
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 300;
         color: rgb(40, 39, 39);
+        font-family: "Montserrat", sans-serif;
     }
 
     .home_subtitle {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './TimeLine.css'
 import gifFile from '../Assets/test.gif'
 import { CiCalendar } from "react-icons/ci";
+import Skills from './Skills';
 
 function TimeLine() {
 
@@ -16,14 +17,13 @@ function TimeLine() {
         <section className="timeLine section">
             <div className="timeLine_container">
                 <h2 className='section_title'>Experience</h2>
-                <p className='section_subtitle'>My personal journey</p>
-                <div className="gif-container">
-
-                    <img src={gifFile} alt="https://giphy.com" className="gif-embed" />
+                <div className="skill_container">
+                    <Skills />
                 </div>
 
 
                 <div className='timeLine_box'>
+                <p className='section_subtitle'>My personal journey</p>
                     <div className='timeLine_tabs'>
                         <div className={toggleState === 1 ? "timeLine_button_active" : "timeLine_button"}
                             onClick={() => toggleTab(1)}>
@@ -45,11 +45,12 @@ function TimeLine() {
 
                             <div className='timeLine_data'>
                                 <div>
-                                    <h3 className='timeLine_title'>BS, Fine Art/Art Study</h3>
-                                    <span className='timeLine_subtitle'>University of Washington</span>
+                                    <h3 className='timeLine_title'>BS, Computing & Software Development</h3>
+                                    <span className='timeLine_subtitle'>Lake Washington IT</span>
                                     <div className='timeLine_calendar' >
-                                        <CiCalendar i className='calendar-icon' /> Seattle, 2013
+                                        <CiCalendar i className='calendar-icon' /> Kirkland, 2024
                                     </div>
+
                                 </div>
                                 <div>
                                     <span className='timeLine_rounder'></span>
@@ -97,11 +98,12 @@ function TimeLine() {
                                     <span className='timeLine_line'></span>
                                 </div>
                                 <div>
-                                    <h3 className='timeLine_title'>BS, Computing & Software Development</h3>
-                                    <span className='timeLine_subtitle'>Lake Washington IT</span>
+                                    <h3 className='timeLine_title'>BFA, Fine Art/Art Study</h3>
+                                    <span className='timeLine_subtitle'>University of Washington</span>
                                     <div className='timeLine_calendar' >
-                                        <CiCalendar i className='calendar-icon' /> Kirkland, 2024
+                                        <CiCalendar i className='calendar-icon' /> Seattle, 2013
                                     </div>
+
                                 </div>
                             </div>
 
@@ -114,10 +116,10 @@ function TimeLine() {
                             <div className='timeLine_data'>
 
                                 <div>
-                                    <h3 className='timeLine_title'>Boeing Company</h3>
-                                    <span className='timeLine_subtitle'>Sealer</span>
+                                    <h3 className='timeLine_title'>Peraclete Technologies</h3>
+                                    <span className='timeLine_subtitle'>Contract Specialist</span>
                                     <div className='timeLine_calendar' >
-                                        <CiCalendar i className='calendar-icon' /> Renton, 2020-2021
+                                        <CiCalendar i className='calendar-icon' /> Renton, 2022-Present
                                     </div>
                                 </div>
 
@@ -134,11 +136,12 @@ function TimeLine() {
                                     <span className='timeLine_line'></span>
                                 </div>
                                 <div>
-                                    <h3 className='timeLine_title'>Paraclet Inc.</h3>
-                                    <span className='timeLine_subtitle'>Customer Service</span>
+                                    <h3 className='timeLine_title'>Boeing Company</h3>
+                                    <span className='timeLine_subtitle'>Aircraft Technician</span>
                                     <div className='timeLine_calendar' >
-                                        <CiCalendar i className='calendar-icon' /> Renton, 2022-Present
+                                        <CiCalendar i className='calendar-icon' /> Renton, 2020-2021
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -147,6 +150,7 @@ function TimeLine() {
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }

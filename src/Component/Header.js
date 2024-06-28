@@ -22,7 +22,6 @@ function Header() {
                 <Link to='home' smooth={true} duration={200} offset={-100} className='nav_link' onClick={() => setOpen(false)}>Home</Link>
                 <Link to='about' smooth={true} duration={200} className='nav_link' onClick={() => setOpen(false)}>About</Link>
                 <Link to='timeLine' smooth={true} duration={500} className='nav_link' onClick={() => setOpen(false)}>Experience</Link>
-                <Link to='skills' smooth={true} duration={500} className='nav_link' onClick={() => setOpen(false)}>Skills</Link>
                 <Link to='projects' smooth={true} duration={500} className='nav_link' onClick={() => setOpen(false)}>Projects</Link>
                 <Link to='contact' smooth={true} duration={500} className='nav_link' onClick={() => setOpen(false)}>Contact</Link>
             </nav>

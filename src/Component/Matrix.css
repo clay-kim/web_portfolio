@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+
+
+.matrix {
+    position: absolute;
+    width: 400px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    animation: moveDown linear infinite;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
+.letter {
+    color: #5ef8a9df;
+    font-family: "Noto Serif KR", "Inconsolata";
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    animation: blink 1s infinite;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .matrix {
+        position: absolute;
+        width: 300px;
+        height: 170px;
+        overflow: hidden;
+        border-radius: 10px;
+        opacity: 0.4;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .line {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        animation: moveDown linear infinite;
+        white-space: nowrap;
+        z-index: 9999;
+    }
+    
+    .letter {
+        color: #5ef8a9df;
+        font-family: "Noto Serif KR", "Inconsolata";
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 12px;
+        animation: blink 1s infinite;
+    }
+}

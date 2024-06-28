@@ -3,7 +3,6 @@
 
 .about_container {
     padding: 20px 80px 20px 80px;
-    background-color: rgba(255, 255, 0, 0);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -74,6 +73,7 @@
         line-height: 2.8rem;
         width: 350px;
         color: #414141;
+        text-shadow: 3px 2px 1px rgb(156, 190, 190);
     }
 }
 
@@ -546,11 +546,10 @@
     }
 
     .content_box {
-        padding-top: 28px;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         font-family: "Open Sans", sans-serif;
-        color: rgb(127, 127, 127);
+        color: rgb(109, 109, 109);
         line-height: 1.3rem;
         width: 360px;
 
@@ -563,6 +562,7 @@
             width: 240px;
             color: #414141;
             margin-bottom: 10px;
+            text-shadow: 3px 2px 1px rgb(156, 190, 190);
         }
     }
 

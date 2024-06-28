@@ -29,10 +29,6 @@ function App() {
           <TimeLine />
         </section>
 
-        <section id="skills">
-          <Skills />
-        </section>
-
         <section id="projects">
           <Projects />
         </section>

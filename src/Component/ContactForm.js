@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import "./ContactForm.css";
 import { useRef } from 'react';
-import pic from '../Assets/brain.jpg';
+import pic from '../Assets/matrixPhone.webp';
 import emailjs from '@emailjs/browser';
 import Social from './Social';
-
+import Matrix from './Matrix';
 
 function ContactForm() {
     const [userName, setUserName] = useState("");
@@ -47,7 +47,7 @@ function ContactForm() {
             <div className="contactForm_container">
                 <div className="contactForm_content">
                     <div className="img_container">
-          
+                        <Matrix />
                         <img src={pic} alt="creation_of_Adam" />
                     </div>
 
