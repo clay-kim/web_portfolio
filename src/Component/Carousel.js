@@ -1,5 +1,5 @@
 
-import pic10 from '../Assets/arts/art3.jpeg'
+import pic6 from '../Assets/arts/art3.jpeg'
 import pic8 from '../Assets/arts/art4.jpg'
 import pic9 from '../Assets/arts/art6.jpg'
 import pic4 from '../Assets/arts/laundry.png'
@@ -7,8 +7,8 @@ import pic3 from '../Assets/arts/pnw.jpg';
 import pic5 from '../Assets/arts/rice-planting.jpg';
 import pic7 from '../Assets/arts/rose-garden.jpg';
 import pic2 from '../Assets/arts/solitude.jpg'
-import pic6 from '../Assets/arts/sunbath.jpg';
-import pic1 from '../Assets/arts/wave.jpg';
+import pic1 from '../Assets/arts/sunbath.jpg';
+import pic10 from '../Assets/arts/wave.jpg';
 
 import "./Carousel.css"
 import React from 'react';

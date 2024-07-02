@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './TimeLine.css'
-import gifFile from '../Assets/test.gif'
 import { CiCalendar } from "react-icons/ci";
 import Skills from './Skills';
 

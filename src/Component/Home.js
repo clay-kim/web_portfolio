@@ -15,7 +15,7 @@ function Home() {
                         <p className='home_subtitle'>Visual Designer & Web developer</p>
                         <div className='home_info'>
                             <span class='highlight'>Hello, 👋</span><br></br>
-                            I'm a recent graduate with a degree in <span class='highlight'>computer science</span>.<br></br>
+                            I recently graduated with a degree in <span class='highlight'>Information Technology</span>.<br></br>
                             <span class='highlight'>Passionate</span> about <span class='highlight'>web/</span><span class='highlight'>app development</span>,
                             as well as <span class='highlight'>UX/UI</span> and interactive design.<br></br>
                             I'm all about creating software that's both <span class='highlight'>user-friendly</span> and <span class='highlight'>visually appealing</span>.

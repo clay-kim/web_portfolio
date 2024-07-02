@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './SingleProject.css';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import pic from '../Assets/clayPic.jpeg'
 import Modal from 'react-bootstrap/Modal';
 import ModalBody from "react-bootstrap/ModalBody";
 import ModalHeader from "react-bootstrap/ModalHeader";

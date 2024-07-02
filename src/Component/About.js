@@ -1,8 +1,7 @@
 import react from 'react';
 import './About.css'
 import Carousel from './Carousel';
-import artistPic2 from '../Assets/clayArtist.jpg'
-import artistPic from '../Assets/clay.png'
+
 
 
 function About() {
