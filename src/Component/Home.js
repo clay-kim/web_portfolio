@@ -4,6 +4,12 @@ import { IoDownloadOutline } from "react-icons/io5";
 import Social from './Social';
 import resume from '../Assets/resume.pdf';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
 
 function Home() {
     return (
@@ -11,7 +17,16 @@ function Home() {
             <div className="home_container">
                 <div className="home_content">
                     <div className="home_text">
-                        <h1 className='home_title'>Clay Kim</h1>
+                        <div data-aos="fade-right"
+                            data-aos-offset="100"
+                            data-aos-delay="50"
+                            data-aos-duration="1500"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                
+                        > <h1 className='home_title'>Clay Kim</h1></div>
+
                         <p className='home_subtitle'>Visual Designer & Web developer</p>
                         <div className='home_info'>
                             <span class='highlight'>Hello, 👋</span><br></br>
@@ -24,8 +39,8 @@ function Home() {
                             <span class='highlight'> inspiration</span>.
                         </div>
                         <div className="button_container">
-                            <a href={resume} className='sendButton'>Resume<IoDownloadOutline className='icon' /></a> 
-                            
+                            <a href={resume} className='sendButton'>Resume<IoDownloadOutline className='icon' /></a>
+
                         </div>
                     </div>
 
