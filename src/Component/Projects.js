@@ -31,7 +31,7 @@ function Projects() {
         ],
       },
       image: project1Image,
-      demoLink: "",
+      demoLink: "https://gcbible.netlify.app",
       githubLink: "https://github.com/clay-kim/BibleTracker",
       skills: ["React", "AWS", "MySQL", "API", "Chart"]
     },
