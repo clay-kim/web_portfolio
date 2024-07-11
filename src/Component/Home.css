@@ -117,10 +117,7 @@
 @keyframes colorChange {
     from {
         color: #475251f6;
-     
-        /* Dark blue */
     }
-
     to {
         color: #7aafc0;
     }
@@ -131,7 +128,7 @@
 
 
 .home_img {
-    background: url('../Assets/profile2.jpeg');
+    background: url('../Assets/profile2.jpg');
     margin-left: 25px;
     width: 300px;
     height: 300px;
@@ -139,7 +136,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgba(156, 156, 157, 0.473);
+    box-shadow: inset 0px 0px 0px 8px rgba(76, 76, 103, 0.5);
     order: 1;
     animation: profile_animate 8s ease-in-out infinite 1s;
 }
@@ -174,7 +171,6 @@
 
 .home_social_icon:hover {
     color: #ffa601;
-    /* Change color on hover */
 }
 
 

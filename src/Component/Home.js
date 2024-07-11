@@ -46,7 +46,7 @@ function Home() {
 
                     <div className='right_container'>
                         <Social className="home_social" />
-                        <img alt="Clay" className="home_img" />
+                        <img alt="" className="home_img" />
                     </div>
 
                 </div>
