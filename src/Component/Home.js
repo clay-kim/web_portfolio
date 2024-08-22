@@ -3,10 +3,9 @@ import './Home.css';
 import { IoDownloadOutline } from "react-icons/io5";
 import Social from './Social';
 import resume from '../Assets/resume.pdf';
-
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css'; 
+
 AOS.init();
 
 
@@ -31,12 +30,9 @@ function Home() {
                         <div className='home_info'>
                             <span class='highlight'>Hello, 👋</span><br></br>
                             I recently graduated with a degree in <span class='highlight'>Information Technology</span>.<br></br>
-                            <span class='highlight'>Passionate</span> about <span class='highlight'>web/</span><span class='highlight'>app development</span>,
-                            as well as <span class='highlight'>UX/UI</span> and interactive design.<br></br>
-                            I'm all about creating software that's both <span class='highlight'>user-friendly</span> and <span class='highlight'>visually appealing</span>.
-                            <br></br>Out side of coding, I'm always up for some artistic activities like <span class='highlight'>painting</span> or
-                            <span class='highlight'> photography</span> to unwind and  also for getting
-                            <span class='highlight'> inspiration</span>.
+                            Currently seeking a role as a <span class='highlight'>web</span> or <span class='highlight'>mobile developer</span>. 
+                            Passionate about creating <span class='highlight'>user-friendly</span> and visually impactful <span class='highlight'>web applications</span>.<br></br>
+                            Skilled in <span class='highlight'>Agile</span> methodology, able to excel in <span class='highlight'>fast-paced</span> environments with strong <span class='highlight'>teamwork</span> and flexible yet precise work..
                         </div>
                         <div className="button_container">
                             <a href={resume} className='sendButton'>Resume<IoDownloadOutline className='icon' /></a>
