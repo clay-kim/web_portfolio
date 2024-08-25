@@ -26,13 +26,16 @@ function Home() {
                 
                         > <h1 className='home_title'>Clay Kim</h1></div>
 
-                        <p className='home_subtitle'>Visual Designer & Web developer</p>
+                        <div className='subtitle-container'>
+                        <p className='home_subtitle'>Web Developer</p> <p className='home_subtitle2'>(Introductory Position)</p>
+                        </div>
+                       
                         <div className='home_info'>
                             <span class='highlight'>Hello, 👋</span><br></br>
                             I recently graduated with a degree in <span class='highlight'>Information Technology</span>.<br></br>
                             Currently seeking a role as a <span class='highlight'>web</span> or <span class='highlight'>mobile developer</span>. 
-                            Passionate about creating <span class='highlight'>user-friendly</span> and visually impactful <span class='highlight'>web applications</span>.<br></br>
-                            Skilled in <span class='highlight'>Agile</span> methodology, able to excel in <span class='highlight'>fast-paced</span> environments with strong <span class='highlight'>teamwork</span> and flexible yet precise work..
+                            Passionate about creating <span class='highlight'>user-centered</span> and visually appealing <span class='highlight'>web applications</span>.<br></br>
+                            I'm ready to take advantage of the <span class='highlight'>opportunity</span> to learn and <span class='highlight'>grow</span> with a great <span class='highlight'>team</span> and company.
                         </div>
                         <div className="button_container">
                             <a href={resume} className='sendButton'>Resume<IoDownloadOutline className='icon' /></a>

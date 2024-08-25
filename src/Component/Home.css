@@ -78,12 +78,17 @@
     color: rgb(48, 48, 48);
 }
 
+.subtitle-container{
+    display: flex;
+}
+
 .home_subtitle {
     position: relative;
     font-size: 18px;
+    font-weight: 400;
     margin-bottom: 0px;
     padding-left: 4rem;
-    color: rgba(89, 89, 90, 0.708);
+    color: rgba(75, 70, 86, 0.811);
 }
 
 .home_subtitle::before {
@@ -91,9 +96,17 @@
     position: absolute;
     width: 60px;
     height: 1px;
-    background-color: rgba(89, 89, 90, 0.708);
+    background-color: rgb(75, 70, 86);
     left: 0;
     top: 1rem;
+}
+
+.home_subtitle2{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-left: 3px;
+    color: rgba(99, 101, 92, 0.811);
 }
 
 .home_info {
