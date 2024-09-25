@@ -33,9 +33,9 @@ function Home() {
                         <div className='home_info'>
                             <span class='highlight'>Hello, 👋</span><br></br>
                             I recently graduated with a degree in <span class='highlight'>Information Technology</span>.<br></br>
-                            Currently seeking a role as a <span class='highlight'>web</span> or <span class='highlight'>mobile developer</span>. 
-                            Passionate about creating <span class='highlight'>user-centered</span> and visually appealing <span class='highlight'>web applications</span>.<br></br>
-                            I'm ready to take advantage of the <span class='highlight'>opportunity</span> to learn and <span class='highlight'>grow</span> with a great <span class='highlight'>team</span> and company.
+                            Actively seeking a <span class='highlight'>full-stack</span> developer role.<br></br>
+                            I'm focused on delivering end-to-end <span class='highlight'>web</span> and <span class='highlight'>mobile</span> solutions and excited to learn and <span class='highlight'>grow</span> with a dynamic team and company.
+                    
                         </div>
                         <div className="button_container">
                             <a href={resume} className='sendButton'>Resume<IoDownloadOutline className='icon' /></a>
