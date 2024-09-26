@@ -27,7 +27,7 @@ function Home() {
                         > <h1 className='home_title'>Clay Kim</h1></div>
 
                         <div className='subtitle-container'>
-                        <p className='home_subtitle'>Web Developer</p> <p className='home_subtitle2'>(Introductory Position)</p>
+                        <p className='home_subtitle'>Full-Stack Developer</p> <p className='home_subtitle2'>(Entry Level)</p>
                         </div>
                        
                         <div className='home_info'>
